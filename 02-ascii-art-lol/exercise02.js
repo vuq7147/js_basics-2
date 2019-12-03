@@ -10,8 +10,18 @@
 (function() {
 
     //your code here
-
+    let newArray = []
+    for (let i =0; i < artArray.length; i=i+1) {
+        // console.log(artArray[i])
+        if(artArray[i] !== "lol".repeat(40)){
+            newArray.push(artArray[i])
+        }
+    }
+    
+    artArray = newArray
     writeAscii(artArray);
+
+
 
 })();
 

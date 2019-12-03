@@ -11,4 +11,11 @@
 
     //your code here
 
+    let wordSplit = gAddress.split('');
+    console.log (wordSplit)
+    for (i =0;i< wordSplit.length;i++){
+        console.log(wordSplit[i])
+    }
+
+
 })();

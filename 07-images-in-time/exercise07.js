@@ -30,6 +30,19 @@
     document.getElementById('image-box').appendChild(img);
   }
 
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  function addImageLater(images) {
+    let randomNumber = getRandomInt(4);
+    setTimeout(function() { addImage(images[randomNumber]); addImageLater(images); }, 2500);  
+  }
+
+  let images = ['cats.jpg', 'hugger.jpg', 'internet.jpg', 'jackson.jpg', 'washington.jpg'];
+  
   //your code here
+  addImageLater(images);
+
 
 })();
